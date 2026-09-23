@@ -1,0 +1,646 @@
+[
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941dec"
+    },
+    "equipo": "Colombia",
+    "numero": 1,
+    "posicion": "GK",
+    "nombreFifa": "OSPINA David",
+    "fechaNacimiento": "31.08.1988",
+    "nombreCamiseta": "OSPINA",
+    "club": "Arsenal FC (ENG)",
+    "estatura": 183,
+    "peso": 80
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941ded"
+    },
+    "equipo": "Colombia",
+    "numero": 2,
+    "posicion": "CB",
+    "nombreFifa": "ZAPATA Cristian",
+    "fechaNacimiento": "30.09.1986",
+    "nombreCamiseta": "C. ZAPATA",
+    "club": "AC Milan (ITA)",
+    "estatura": 187,
+    "peso": 82
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941dee"
+    },
+    "equipo": "Colombia",
+    "numero": 3,
+    "posicion": "CB",
+    "nombreFifa": "MURILLO Oscar",
+    "fechaNacimiento": "18.04.1988",
+    "nombreCamiseta": "O. MURILLO",
+    "club": "CF Pachuca (MEX)",
+    "estatura": 184,
+    "peso": 80
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941def"
+    },
+    "equipo": "Colombia",
+    "numero": 4,
+    "posicion": "CB",
+    "nombreFifa": "ARIAS Santiago",
+    "fechaNacimiento": "13.01.1992",
+    "nombreCamiseta": "ARIAS",
+    "club": "PSV Eindhoven (NED)",
+    "estatura": 177,
+    "peso": 71
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941df0"
+    },
+    "equipo": "Colombia",
+    "numero": 5,
+    "posicion": "CM",
+    "nombreFifa": "BARRIOS Wilmar",
+    "fechaNacimiento": "16.10.1993",
+    "nombreCamiseta": "BARRIOS",
+    "club": "CA Boca Juniors (ARG)",
+    "estatura": 178,
+    "peso": 74
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941df1"
+    },
+    "equipo": "Colombia",
+    "numero": 6,
+    "posicion": "CM",
+    "nombreFifa": "SANCHEZ Carlos",
+    "fechaNacimiento": "06.02.1986",
+    "nombreCamiseta": "C. SANCHEZ",
+    "club": "RCD Espanyol (ESP)",
+    "estatura": 182,
+    "peso": 82
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941df2"
+    },
+    "equipo": "Colombia",
+    "numero": 7,
+    "posicion": "CF",
+    "nombreFifa": "BACCA Carlos",
+    "fechaNacimiento": "08.09.1986",
+    "nombreCamiseta": "BACCA",
+    "club": "Villarreal CF (ESP)",
+    "estatura": 181,
+    "peso": 77
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941df3"
+    },
+    "equipo": "Colombia",
+    "numero": 8,
+    "posicion": "CM",
+    "nombreFifa": "AGUILAR Abel",
+    "fechaNacimiento": "06.01.1985",
+    "nombreCamiseta": "AGUILAR T.",
+    "club": "AC Deportivo Cali (COL)",
+    "estatura": 185,
+    "peso": 82
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941df4"
+    },
+    "equipo": "Colombia",
+    "numero": 9,
+    "posicion": "CF",
+    "nombreFifa": "FALCAO Radamel",
+    "fechaNacimiento": "10.02.1986",
+    "nombreCamiseta": "FALCAO",
+    "club": "AS Monaco (FRA)",
+    "estatura": 177,
+    "peso": 72
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941df5"
+    },
+    "equipo": "Colombia",
+    "numero": 10,
+    "posicion": "CM",
+    "nombreFifa": "RODRIGUEZ James",
+    "fechaNacimiento": "12.07.1991",
+    "nombreCamiseta": "JAMES",
+    "club": "FC Bayern München (GER)",
+    "estatura": 180,
+    "peso": 75
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941df6"
+    },
+    "equipo": "Colombia",
+    "numero": 11,
+    "posicion": "CM",
+    "nombreFifa": "CUADRADO Juan",
+    "fechaNacimiento": "26.05.1988",
+    "nombreCamiseta": "CUADRADO",
+    "club": "Juventus FC (ITA)",
+    "estatura": 179,
+    "peso": 72
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941df7"
+    },
+    "equipo": "Colombia",
+    "numero": 12,
+    "posicion": "GK",
+    "nombreFifa": "VARGAS Camilo",
+    "fechaNacimiento": "09.03.1989",
+    "nombreCamiseta": "C. VARGAS",
+    "club": "AC Deportivo Cali (COL)",
+    "estatura": 185,
+    "peso": 80
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941df8"
+    },
+    "equipo": "Colombia",
+    "numero": 13,
+    "posicion": "CB",
+    "nombreFifa": "MINA Yerry",
+    "fechaNacimiento": "23.09.1994",
+    "nombreCamiseta": "Y. MINA",
+    "club": "FC Barcelona (ESP)",
+    "estatura": 194,
+    "peso": 95
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941df9"
+    },
+    "equipo": "Colombia",
+    "numero": 14,
+    "posicion": "CF",
+    "nombreFifa": "MURIEL Luis",
+    "fechaNacimiento": "16.04.1991",
+    "nombreCamiseta": "L. MURIEL",
+    "club": "Sevilla FC (ESP)",
+    "estatura": 178,
+    "peso": 79
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941dfa"
+    },
+    "equipo": "Colombia",
+    "numero": 15,
+    "posicion": "CM",
+    "nombreFifa": "URIBE Mateus",
+    "fechaNacimiento": "21.03.1991",
+    "nombreCamiseta": "M. URIBE",
+    "club": "Club América (MEX)",
+    "estatura": 182,
+    "peso": 71
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941dfb"
+    },
+    "equipo": "Colombia",
+    "numero": 16,
+    "posicion": "CM",
+    "nombreFifa": "LERMA Jefferson",
+    "fechaNacimiento": "25.10.1994",
+    "nombreCamiseta": "J. LERMA",
+    "club": "Levante UD (ESP)",
+    "estatura": 179,
+    "peso": 70
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941dfc"
+    },
+    "equipo": "Colombia",
+    "numero": 17,
+    "posicion": "CB",
+    "nombreFifa": "MOJICA Johan",
+    "fechaNacimiento": "21.08.1992",
+    "nombreCamiseta": "J. MOJICA",
+    "club": "Girona FC (ESP)",
+    "estatura": 185,
+    "peso": 66
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941dfd"
+    },
+    "equipo": "Colombia",
+    "numero": 18,
+    "posicion": "CB",
+    "nombreFifa": "FABRA Frank",
+    "fechaNacimiento": "22.02.1991",
+    "nombreCamiseta": "FABRA",
+    "club": "CA Boca Juniors (ARG)",
+    "estatura": 172,
+    "peso": 72
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941dfe"
+    },
+    "equipo": "Colombia",
+    "numero": 19,
+    "posicion": "CF",
+    "nombreFifa": "BORJA Miguel",
+    "fechaNacimiento": "26.01.1993",
+    "nombreCamiseta": "M. BORJA",
+    "club": "SE Palmeiras (BRA)",
+    "estatura": 183,
+    "peso": 74
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941dff"
+    },
+    "equipo": "Colombia",
+    "numero": 20,
+    "posicion": "CM",
+    "nombreFifa": "QUINTERO Juan",
+    "fechaNacimiento": "18.01.1993",
+    "nombreCamiseta": "J. QUINTERO",
+    "club": "CA River Plate (ARG)",
+    "estatura": 169,
+    "peso": 64
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e00"
+    },
+    "equipo": "Colombia",
+    "numero": 21,
+    "posicion": "CF",
+    "nombreFifa": "IZQUIERDO Jose",
+    "fechaNacimiento": "07.07.1992",
+    "nombreCamiseta": "IZQUIERDO",
+    "club": "Brighton & Hove Albion FC (ENG)",
+    "estatura": 171,
+    "peso": 73
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e01"
+    },
+    "equipo": "Colombia",
+    "numero": 22,
+    "posicion": "GK",
+    "nombreFifa": "CUADRADO Jose",
+    "fechaNacimiento": "01.06.1985",
+    "nombreCamiseta": "J.F. CUADRADO",
+    "club": "CD Once Caldas (COL)",
+    "estatura": 180,
+    "peso": 80
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e02"
+    },
+    "equipo": "Colombia",
+    "numero": 23,
+    "posicion": "CB",
+    "nombreFifa": "SANCHEZ Davinson",
+    "fechaNacimiento": "12.06.1996",
+    "nombreCamiseta": "D. SANCHEZ",
+    "club": "Tottenham Hotspur FC (ENG)",
+    "estatura": 187,
+    "peso": 81
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e03"
+    },
+    "equipo": "Japan",
+    "numero": 1,
+    "posicion": "GK",
+    "nombreFifa": "KAWASHIMA Eiji",
+    "fechaNacimiento": "20.03.1983",
+    "nombreCamiseta": "KAWASHIMA",
+    "club": "FC Metz (FRA)",
+    "estatura": 185,
+    "peso": 74
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e04"
+    },
+    "equipo": "Japan",
+    "numero": 2,
+    "posicion": "CB",
+    "nombreFifa": "UEDA Naomichi",
+    "fechaNacimiento": "24.10.1994",
+    "nombreCamiseta": "UEDA",
+    "club": "Kashima Antlers (JPN)",
+    "estatura": 186,
+    "peso": 79
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e05"
+    },
+    "equipo": "Japan",
+    "numero": 3,
+    "posicion": "CB",
+    "nombreFifa": "SHOJI Gen",
+    "fechaNacimiento": "11.12.1992",
+    "nombreCamiseta": "SHOJI",
+    "club": "Kashima Antlers (JPN)",
+    "estatura": 182,
+    "peso": 74
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e06"
+    },
+    "equipo": "Japan",
+    "numero": 4,
+    "posicion": "CM",
+    "nombreFifa": "HONDA Keisuke",
+    "fechaNacimiento": "13.06.1986",
+    "nombreCamiseta": "HONDA",
+    "club": "CF Pachuca (MEX)",
+    "estatura": 182,
+    "peso": 74
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e07"
+    },
+    "equipo": "Japan",
+    "numero": 5,
+    "posicion": "CB",
+    "nombreFifa": "NAGATOMO Yuto",
+    "fechaNacimiento": "12.09.1986",
+    "nombreCamiseta": "NAGATOMO",
+    "club": "Galatasaray SK (TUR)",
+    "estatura": 170,
+    "peso": 68
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e08"
+    },
+    "equipo": "Japan",
+    "numero": 6,
+    "posicion": "CB",
+    "nombreFifa": "ENDO Wataru",
+    "fechaNacimiento": "09.02.1993",
+    "nombreCamiseta": "ENDO",
+    "club": "Urawa Reds (JPN)",
+    "estatura": 178,
+    "peso": 75
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e09"
+    },
+    "equipo": "Japan",
+    "numero": 7,
+    "posicion": "CM",
+    "nombreFifa": "SHIBASAKI Gaku",
+    "fechaNacimiento": "28.05.1992",
+    "nombreCamiseta": "SHIBASAKI",
+    "club": "Getafe CF (ESP)",
+    "estatura": 175,
+    "peso": 64
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e0a"
+    },
+    "equipo": "Japan",
+    "numero": 8,
+    "posicion": "CM",
+    "nombreFifa": "HARAGUCHI Genki",
+    "fechaNacimiento": "09.05.1991",
+    "nombreCamiseta": "HARAGUCHI",
+    "club": "Fortuna Düsseldorf (GER)",
+    "estatura": 178,
+    "peso": 68
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e0b"
+    },
+    "equipo": "Japan",
+    "numero": 9,
+    "posicion": "CF",
+    "nombreFifa": "OKAZAKI Shinji",
+    "fechaNacimiento": "16.04.1986",
+    "nombreCamiseta": "OKAZAKI",
+    "club": "Leicester City FC (ENG)",
+    "estatura": 174,
+    "peso": 70
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e0c"
+    },
+    "equipo": "Japan",
+    "numero": 10,
+    "posicion": "CM",
+    "nombreFifa": "KAGAWA Shinji",
+    "fechaNacimiento": "17.03.1989",
+    "nombreCamiseta": "KAGAWA",
+    "club": "Borussia Dortmund (GER)",
+    "estatura": 175,
+    "peso": 68
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e0d"
+    },
+    "equipo": "Japan",
+    "numero": 11,
+    "posicion": "CM",
+    "nombreFifa": "USAMI Takashi",
+    "fechaNacimiento": "06.05.1992",
+    "nombreCamiseta": "USAMI",
+    "club": "Fortuna Düsseldorf (GER)",
+    "estatura": 178,
+    "peso": 72
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e0e"
+    },
+    "equipo": "Japan",
+    "numero": 12,
+    "posicion": "GK",
+    "nombreFifa": "HIGASHIGUCHI Masaaki",
+    "fechaNacimiento": "12.05.1986",
+    "nombreCamiseta": "HIGASHIGUCHI",
+    "club": "Gamba Osaka (JPN)",
+    "estatura": 184,
+    "peso": 78
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e0f"
+    },
+    "equipo": "Japan",
+    "numero": 13,
+    "posicion": "CF",
+    "nombreFifa": "MUTO Yoshinori",
+    "fechaNacimiento": "15.07.1992",
+    "nombreCamiseta": "MUTO",
+    "club": "FSV Mainz 05 (GER)",
+    "estatura": 179,
+    "peso": 72
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e10"
+    },
+    "equipo": "Japan",
+    "numero": 14,
+    "posicion": "CM",
+    "nombreFifa": "INUI Takashi",
+    "fechaNacimiento": "02.06.1988",
+    "nombreCamiseta": "INUI",
+    "club": "SD Eibar (ESP)",
+    "estatura": 169,
+    "peso": 59
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e11"
+    },
+    "equipo": "Japan",
+    "numero": 15,
+    "posicion": "CF",
+    "nombreFifa": "OSAKO Yuya",
+    "fechaNacimiento": "18.05.1990",
+    "nombreCamiseta": "OSAKO",
+    "club": "1. FC Köln (GER)",
+    "estatura": 182,
+    "peso": 71
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e12"
+    },
+    "equipo": "Japan",
+    "numero": 16,
+    "posicion": "CM",
+    "nombreFifa": "YAMAGUCHI Hotaru",
+    "fechaNacimiento": "06.10.1990",
+    "nombreCamiseta": "YAMAGUCHI",
+    "club": "Cerezo Osaka (JPN)",
+    "estatura": 173,
+    "peso": 72
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e13"
+    },
+    "equipo": "Japan",
+    "numero": 17,
+    "posicion": "CM",
+    "nombreFifa": "HASEBE Makoto",
+    "fechaNacimiento": "18.01.1984",
+    "nombreCamiseta": "HASEBE",
+    "club": "Eintracht Frankfurt (GER)",
+    "estatura": 180,
+    "peso": 72
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e14"
+    },
+    "equipo": "Japan",
+    "numero": 18,
+    "posicion": "CM",
+    "nombreFifa": "OSHIMA Ryota",
+    "fechaNacimiento": "23.01.1993",
+    "nombreCamiseta": "OHSHIMA",
+    "club": "Kawasaki Frontale (JPN)",
+    "estatura": 168,
+    "peso": 64
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e15"
+    },
+    "equipo": "Japan",
+    "numero": 19,
+    "posicion": "CB",
+    "nombreFifa": "SAKAI Hiroki",
+    "fechaNacimiento": "12.04.1990",
+    "nombreCamiseta": "H. SAKAI",
+    "club": "Olympique Marseille (FRA)",
+    "estatura": 183,
+    "peso": 70
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e16"
+    },
+    "equipo": "Japan",
+    "numero": 20,
+    "posicion": "CB",
+    "nombreFifa": "MAKINO Tomoaki",
+    "fechaNacimiento": "11.05.1987",
+    "nombreCamiseta": "MAKINO",
+    "club": "Urawa Reds (JPN)",
+    "estatura": 182,
+    "peso": 77
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e17"
+    },
+    "equipo": "Japan",
+    "numero": 21,
+    "posicion": "CB",
+    "nombreFifa": "SAKAI Gotoku",
+    "fechaNacimiento": "14.03.1991",
+    "nombreCamiseta": "G. SAKAI",
+    "club": "Hamburger SV (GER)",
+    "estatura": 176,
+    "peso": 74
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e18"
+    },
+    "equipo": "Japan",
+    "numero": 22,
+    "posicion": "CB",
+    "nombreFifa": "YOSHIDA Maya",
+    "fechaNacimiento": "24.08.1988",
+    "nombreCamiseta": "YOSHIDA",
+    "club": "Southampton FC (ENG)",
+    "estatura": 189,
+    "peso": 78
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f75e9d3fe1612d941e19"
+    },
+    "equipo": "Japan",
+    "numero": 23,
+    "posicion": "GK",
+    "nombreFifa": "NAKAMURA Kosuke",
+    "fechaNacimiento": "27.02.1995",
+    "nombreCamiseta": "NAKAMURA",
+    "club": "Kashiwa Reysol (JPN)",
+    "estatura": 184,
+    "peso": 72
+  }
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941db0"
+    },
+    "equipo1": "Russia",
+    "equipo2": "Saudi Arabia",
+    "fecha": "2018-06-26",
+    "hora": "15:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941db1"
+    },
+    "equipo1": "Egypt",
+    "equipo2": "Uruguay",
+    "fecha": "2018-06-27",
+    "hora": "12:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941db2"
+    },
+    "equipo1": "Portugal",
+    "equipo2": "Spain",
+    "fecha": "2018-06-28",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941db3"
+    },
+    "equipo1": "Morocco",
+    "equipo2": "IR Iran",
+    "fecha": "2018-06-29",
+    "hora": "15:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941db4"
+    },
+    "equipo1": "France",
+    "equipo2": "Australia",
+    "fecha": "2018-06-30",
+    "hora": "10:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941db5"
+    },
+    "equipo1": "Peru",
+    "equipo2": "Denmark",
+    "fecha": "2018-07-01",
+    "hora": "16:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941db6"
+    },
+    "equipo1": "Argentina",
+    "equipo2": "Iceland",
+    "fecha": "2018-07-02",
+    "hora": "13:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941db7"
+    },
+    "equipo1": "Croatia",
+    "equipo2": "Nigeria",
+    "fecha": "2018-07-03",
+    "hora": "19:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941db8"
+    },
+    "equipo1": "Brazil",
+    "equipo2": "Switzerland",
+    "fecha": "2018-07-04",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941db9"
+    },
+    "equipo1": "Costa Rica",
+    "equipo2": "Serbia",
+    "fecha": "2018-07-05",
+    "hora": "12:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dba"
+    },
+    "equipo1": "Germany",
+    "equipo2": "Mexico",
+    "fecha": "2018-07-06",
+    "hora": "15:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dbb"
+    },
+    "equipo1": "Sweden",
+    "equipo2": "Korea Republic",
+    "fecha": "2018-07-07",
+    "hora": "12:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dbc"
+    },
+    "equipo1": "Belgium",
+    "equipo2": "Panama",
+    "fecha": "2018-07-08",
+    "hora": "15:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dbd"
+    },
+    "equipo1": "Tunisia",
+    "equipo2": "England",
+    "fecha": "2018-07-09",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dbe"
+    },
+    "equipo1": "Poland",
+    "equipo2": "Senegal",
+    "fecha": "2018-07-10",
+    "hora": "15:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dbf"
+    },
+    "equipo1": "Colombia",
+    "equipo2": "Japan",
+    "fecha": "2018-07-11",
+    "hora": "12:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dc0"
+    },
+    "equipo1": "Russia",
+    "equipo2": "Egypt",
+    "fecha": "2018-07-12",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dc1"
+    },
+    "equipo1": "Uruguay",
+    "equipo2": "Saudi Arabia",
+    "fecha": "2018-07-13",
+    "hora": "15:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dc2"
+    },
+    "equipo1": "Portugal",
+    "equipo2": "Morocco",
+    "fecha": "2018-07-14",
+    "hora": "12:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dc3"
+    },
+    "equipo1": "IR Iran",
+    "equipo2": "Spain",
+    "fecha": "2018-07-15",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dc4"
+    },
+    "equipo1": "France",
+    "equipo2": "Peru",
+    "fecha": "2018-07-16",
+    "hora": "15:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dc5"
+    },
+    "equipo1": "Denmark",
+    "equipo2": "Australia",
+    "fecha": "2018-07-17",
+    "hora": "12:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dc6"
+    },
+    "equipo1": "Argentina",
+    "equipo2": "Croatia",
+    "fecha": "2018-07-18",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dc7"
+    },
+    "equipo1": "Nigeria",
+    "equipo2": "Iceland",
+    "fecha": "2018-07-19",
+    "hora": "15:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dc8"
+    },
+    "equipo1": "Brazil",
+    "equipo2": "Costa Rica",
+    "fecha": "2018-07-20",
+    "hora": "12:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dc9"
+    },
+    "equipo1": "Serbia",
+    "equipo2": "Switzerland",
+    "fecha": "2018-07-21",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dca"
+    },
+    "equipo1": "Germany",
+    "equipo2": "Sweden",
+    "fecha": "2018-07-22",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dcb"
+    },
+    "equipo1": "Korea Republic",
+    "equipo2": "Mexico",
+    "fecha": "2018-07-23",
+    "hora": "15:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dcc"
+    },
+    "equipo1": "Belgium",
+    "equipo2": "Tunisia",
+    "fecha": "2018-07-24",
+    "hora": "12:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dcd"
+    },
+    "equipo1": "England",
+    "equipo2": "Panama",
+    "fecha": "2018-07-25",
+    "hora": "12:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dce"
+    },
+    "equipo1": "Poland",
+    "equipo2": "Colombia",
+    "fecha": "2018-07-26",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dcf"
+    },
+    "equipo1": "Japan",
+    "equipo2": "Senegal",
+    "fecha": "2018-07-27",
+    "hora": "15:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dd0"
+    },
+    "equipo1": "Uruguay",
+    "equipo2": "Russia",
+    "fecha": "2018-07-28",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dd1"
+    },
+    "equipo1": "Saudi Arabia",
+    "equipo2": "Egypt",
+    "fecha": "2018-07-29",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dd2"
+    },
+    "equipo1": "IR Iran",
+    "equipo2": "Portugal",
+    "fecha": "2018-07-30",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dd3"
+    },
+    "equipo1": "Spain",
+    "equipo2": "Morocco",
+    "fecha": "2018-07-31",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dd4"
+    },
+    "equipo1": "Denmark",
+    "equipo2": "France",
+    "fecha": "2018-08-01",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dd5"
+    },
+    "equipo1": "Australia",
+    "equipo2": "Peru",
+    "fecha": "2018-08-02",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dd6"
+    },
+    "equipo1": "Nigeria",
+    "equipo2": "Argentina",
+    "fecha": "2018-08-03",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dd7"
+    },
+    "equipo1": "Iceland",
+    "equipo2": "Croatia",
+    "fecha": "2018-08-04",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dd8"
+    },
+    "equipo1": "Serbia",
+    "equipo2": "Brazil",
+    "fecha": "2018-08-05",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dd9"
+    },
+    "equipo1": "Switzerland",
+    "equipo2": "Costa Rica",
+    "fecha": "2018-08-06",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dda"
+    },
+    "equipo1": "Korea Republic",
+    "equipo2": "Germany",
+    "fecha": "2018-08-07",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941ddb"
+    },
+    "equipo1": "Mexico",
+    "equipo2": "Sweden",
+    "fecha": "2018-08-08",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941ddc"
+    },
+    "equipo1": "England",
+    "equipo2": "Belgium",
+    "fecha": "2018-08-09",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941ddd"
+    },
+    "equipo1": "Panama",
+    "equipo2": "Tunisia",
+    "fecha": "2018-08-10",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dde"
+    },
+    "equipo1": "Japan",
+    "equipo2": "Poland",
+    "fecha": "2018-08-11",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941ddf"
+    },
+    "equipo1": "Senegal",
+    "equipo2": "Colombia",
+    "fecha": "2018-08-12",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941de0"
+    },
+    "equipo1": "Uruguay",
+    "equipo2": "Portugal",
+    "fecha": "2018-08-13",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941de1"
+    },
+    "equipo1": "France",
+    "equipo2": "Argentina",
+    "fecha": "2018-08-14",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941de2"
+    },
+    "equipo1": "Spain",
+    "equipo2": "Russia",
+    "fecha": "2018-08-15",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941de3"
+    },
+    "equipo1": "Croatia",
+    "equipo2": "Denmark",
+    "fecha": "2018-08-16",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941de4"
+    },
+    "equipo1": "Brazil",
+    "equipo2": "Mexico",
+    "fecha": "2018-08-17",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941de5"
+    },
+    "equipo1": "Belgium",
+    "equipo2": "Japan",
+    "fecha": "2018-08-18",
+    "hora": "08:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941de6"
+    },
+    "equipo1": "Sweden",
+    "equipo2": "Switzerland",
+    "fecha": "2018-08-19",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941de7"
+    },
+    "equipo1": "Colombia",
+    "equipo2": "England",
+    "fecha": "2018-08-20",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941de8"
+    },
+    "equipo1": "Uruguay",
+    "equipo2": "France",
+    "fecha": "2018-08-21",
+    "hora": "14:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941de9"
+    },
+    "equipo1": "Brazil",
+    "equipo2": "Belgium",
+    "fecha": "2018-08-22",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941dea"
+    },
+    "equipo1": "Russia",
+    "equipo2": "Croatia",
+    "fecha": "2018-08-23",
+    "hora": "18:00:00"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f72e9d3fe1612d941deb"
+    },
+    "equipo1": "Sweden",
+    "equipo2": "England",
+    "fecha": "2018-08-24",
+    "hora": "14:00:00"
+  }
+]

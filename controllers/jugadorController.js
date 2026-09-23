@@ -1,6 +1,6 @@
 const Jugador = require('../models/Jugador');
 
-// GET /api/jugadores - Listar todos los jugadores con filtros opcionales
+// GET /api/jugadores
 exports.getAllJugadores = async (req, res, next) => {
   try {
     const filtro = {};
@@ -20,7 +20,7 @@ exports.getAllJugadores = async (req, res, next) => {
   }
 };
 
-// GET /api/jugadores/:id - Obtener un jugador por _id
+// GET /api/jugadores/:id
 exports.getJugadorById = async (req, res, next) => {
   try {
     const jugador = await Jugador.findById(req.params.id);
@@ -33,7 +33,7 @@ exports.getJugadorById = async (req, res, next) => {
   }
 };
 
-// GET /api/jugadores/equipo/:equipo - Jugadores de un equipo específico
+// GET /api/jugadores/equipo/:equipo
 exports.getJugadoresByEquipo = async (req, res, next) => {
   try {
     const jugadores = await Jugador.find({ equipo: req.params.equipo }).sort({ numero: 1 });
@@ -47,7 +47,7 @@ exports.getJugadoresByEquipo = async (req, res, next) => {
   }
 };
 
-// GET /api/jugadores/stats/:equipo - Estadísticas de los jugadores de un equipo
+// GET /api/jugadores/stats/:equipo
 exports.getEstadisticasJugadores = async (req, res, next) => {
   try {
     const stats = await Jugador.aggregate([
@@ -87,7 +87,7 @@ exports.getEstadisticasJugadores = async (req, res, next) => {
   }
 };
 
-// POST /api/jugadores - Crear un jugador
+// POST /api/jugadores
 exports.createJugador = async (req, res, next) => {
   try {
     const nuevoJugador = await Jugador.create(req.body);
@@ -97,7 +97,7 @@ exports.createJugador = async (req, res, next) => {
   }
 };
 
-// PATCH /api/jugadores/:id - Actualizar un jugador
+// PATCH /api/jugadores/:id
 exports.updateJugador = async (req, res, next) => {
   try {
     const jugador = await Jugador.findByIdAndUpdate(req.params.id, req.body, {
@@ -113,7 +113,7 @@ exports.updateJugador = async (req, res, next) => {
   }
 };
 
-// DELETE /api/jugadores/:id - Eliminar un jugador
+// DELETE /api/jugadores/:id
 exports.deleteJugador = async (req, res, next) => {
   try {
     const jugador = await Jugador.findByIdAndDelete(req.params.id);

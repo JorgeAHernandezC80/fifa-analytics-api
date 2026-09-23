@@ -1,6 +1,6 @@
 # FIFA Analytics API
 
-API RESTful construida con Node.js, Express y MongoDB Atlas para consultar y administrar los datos del Mundial de Rusia 2018.
+API RESTful construida con Node.js, Express y MongoDB para consultar y administrar los datos del Mundial de Rusia 2018.
 
 Este proyecto nace como respuesta a una necesidad concreta: la empresa ficticia **FIFA Analytics S.A.S.** tenía la información del Mundial regada en hojas de Excel y documentos sueltos, lo que dificultaba las consultas. La solución fue construir un backend que centralice los equipos, jugadores y partidos en una base de datos NoSQL, y exponerla mediante endpoints REST.
 
@@ -24,7 +24,7 @@ Este proyecto nace como respuesta a una necesidad concreta: la empresa ficticia 
 Antes de empezar, asegúrate de tener instalado:
 
 - **Node.js** (versión LTS, la 20 o superior) — [descargar aquí](https://nodejs.org)
-- **Cuenta en MongoDB Atlas** (es gratis) — [registrarse aquí](https://www.mongodb.com/cloud/atlas/register)
+- **MongoDB Community Server** 6.0 o superior, corriendo en tu equipo — [descargar aquí](https://www.mongodb.com/try/download/community) (o una cuenta gratuita de MongoDB Atlas)
 - **Postman** o similar para probar los endpoints (opcional pero recomendado) — [descargar aquí](https://www.postman.com/downloads)
 - **Git** para clonar el repositorio — [descargar aquí](https://git-scm.com)
 
@@ -64,31 +64,38 @@ En Windows (PowerShell):
 Copy-Item .env.example .env
 ```
 
-2. Abre `.env` y ajusta las variables:
+2. El `.env.example` ya viene listo para MongoDB local, así que normalmente no hay que cambiar nada:
 
 ```env
 PORT=3000
-MONGODB_URI=mongodb+srv://usuario:password@cluster0.xxxxx.mongodb.net/mundial2018?retryWrites=true&w=majority
 NODE_ENV=development
+MONGODB_URI=mongodb://127.0.0.1:27017/mundial2018
 ```
 
-**Importante sobre la cadena de conexión:**
+**Sobre la cadena de conexión:**
 
-- Reemplaza `usuario` y `password` con las credenciales de MongoDB Atlas.
-- Reemplaza `cluster0.xxxxx.mongodb.net` con el nombre real de tu cluster.
+- Se usa `127.0.0.1` y no `localhost`: desde Node 17, `localhost` se resuelve a IPv6 (`::1`) y MongoDB local solo escucha en IPv4, lo que produce `ECONNREFUSED`.
 - La parte `/mundial2018` es el nombre de la base de datos.
-- Si la contraseña tiene caracteres especiales (`@`, `#`, `%`, `&`, `/`, `:`), debes codificarlos. Por ejemplo, `@` se convierte en `%40`.
+- Para usar **MongoDB Atlas**, reemplaza la URI por la de tu clúster (`mongodb+srv://usuario:password@...`). Si la contraseña tiene caracteres especiales (`@`, `#`, `%`, `&`, `/`, `:`), debes codificarlos: `@` se convierte en `%40`.
 
 ## Cargar los datos
 
-Antes de arrancar el servidor, hay que poblar la base. Ejecuta los scripts en este orden:
+Antes de arrancar el servidor hay que crear y poblar la base. Con un solo comando:
 
 ```bash
-node scripts/01_crear_bd.js
-node scripts/02_seed_equipos.js
-node scripts/03_seed_jugadores.js
-node scripts/04_seed_partidos.js
+npm run seed
 ```
+
+O paso a paso, en este orden:
+
+```bash
+node scripts/01_crear_bd.js         # colecciones con validación $jsonSchema e índices
+node scripts/02_seed_equipos.js     # carga data/equipos.json
+node scripts/03_seed_jugadores.js   # carga data/jugadores.json
+node scripts/04_seed_partidos.js    # carga data/partidos.json y muestra el resumen
+```
+
+Todos los scripts se pueden ejecutar varias veces: el 01 recrea las colecciones y los demás borran los datos anteriores antes de insertar, así que nunca se duplican registros.
 
 Al final deberías tener:
 
@@ -99,11 +106,15 @@ Al final deberías tener:
 Verifica en `mongosh`:
 
 ```javascript
-use("mundial2018")
+use mundial2018
 db.equipos.countDocuments()
 db.jugadores.countDocuments()
 db.partidos.countDocuments()
 ```
+
+### ¿De dónde salen los datos?
+
+Los archivos de `data/` se generaron una sola vez desde MongoDB Atlas con `npm run db:exportar` (`scripts/00_exportar_datos.js`). Están en formato Extended JSON, que conserva los `ObjectId` y las fechas originales. Ese script también revisa la calidad de los datos: confederaciones, duplicados y relaciones entre colecciones.
 
 ## Ejecutar el servidor
 
@@ -174,6 +185,28 @@ En `GET /api/jugadores`:
 - `?estaturaMax=170` — estatura menor a 170 cm
 - `?estaturaMin=190` — estatura mayor a 190 cm
 
+### Códigos de respuesta
+
+| Código | Cuándo |
+|--------|--------|
+| 200 | Consulta o actualización exitosa |
+| 201 | Registro creado (POST) |
+| 204 | Registro eliminado (DELETE) |
+| 400 | JSON mal formado o `_id` con formato inválido |
+| 404 | El registro o la ruta no existen |
+| 409 | Registro duplicado (`id`, `abreviatura` o dorsal repetido en un equipo) |
+| 422 | Datos que no cumplen las validaciones (campo obligatorio, confederación o posición inválida...) |
+
+Los errores responden así:
+
+```json
+{
+  "status": "fail",
+  "message": "Datos inválidos",
+  "errores": [{ "campo": "confederacion", "mensaje": "FIFA no es una confederación válida" }]
+}
+```
+
 ## Ejemplos de uso
 
 **Listar equipos:**
@@ -230,17 +263,28 @@ fifa-analytics-api/
 ├── middlewares/
 │   └── errorHandler.js
 ├── scripts/
+│   ├── lib/conexion.js          # conexión y carga compartidas por los scripts
+│   ├── 00_exportar_datos.js     # (solo el autor) exporta desde Atlas a data/
 │   ├── 01_crear_bd.js
 │   ├── 02_seed_equipos.js
 │   ├── 03_seed_jugadores.js
-│   └── 04_seed_partidos.js
+│   ├── 04_seed_partidos.js
+│   └── diagnostico.js
+├── data/
+│   ├── equipos.json
+│   ├── jugadores.json
+│   └── partidos.json
 └── docs/
-    └── informe-AA2-EV01.md
+    └── informe-AA2-EV01.docx
 ```
 
 ## Problemas comunes
 
-**Error: `querySrv ECONNREFUSED`**
+**Error: `connect ECONNREFUSED 127.0.0.1:27017`**
+
+El servicio de MongoDB local no está corriendo. En Windows, abre "Servicios" e inicia **MongoDB Server**, o ejecuta `net start MongoDB` como administrador.
+
+**Error: `querySrv ECONNREFUSED`** (solo con Atlas)
 
 Ocurre en Windows cuando Node.js no puede resolver el DNS de MongoDB Atlas. Solución: forzar DNS público al inicio de `config/database.js`:
 
@@ -253,15 +297,17 @@ dns.setServers(['8.8.8.8', '8.8.4.4']);
 
 - Contraseña mal escrita en `.env`
 - Caracteres especiales sin codificar (`@` → `%40`)
-- IP no autorizada en MongoDB Atlas (ve a Network Access y agrega `0.0.0.0/0` para desarrollo)
+- IP no autorizada en MongoDB Atlas: ve a Network Access y usa **Add Current IP Address** (evita `0.0.0.0/0`, que permite conexiones desde cualquier lugar)
 
 **Error: `E11000 duplicate key error`**
 
-Un documento con ese `id` o `abreviatura` ya existe. Solución:
+Ya existe un documento con ese `id`, `abreviatura` o dorsal. Busca el registro repetido en lugar de borrar la colección:
 
 ```javascript
-db.equipos.deleteMany({})
+db.equipos.find({ abreviatura: "uru" })
 ```
+
+Si lo que quieres es volver a los datos originales, ejecuta `npm run seed`.
 
 **Error: `Port 3000 already in use`**
 
@@ -273,7 +319,7 @@ npx kill-port 3000
 
 **`/api/equipos` devuelve `[]`**
 
-La colección está vacía. Ejecuta los scripts de seed.
+La colección está vacía. Ejecuta `npm run seed`.
 
 ## Tecnologías usadas
 
@@ -282,7 +328,7 @@ La colección está vacía. Ejecuta los scripts de seed.
 | Node.js | LTS (20+) | Entorno de ejecución |
 | Express | 5.x | Framework del servidor |
 | Mongoose | 9.x | Modelado de datos |
-| MongoDB Atlas | Cloud | Base de datos NoSQL |
+| MongoDB | 6.0+ (local o Atlas) | Base de datos NoSQL |
 | dotenv | 18.x | Variables de entorno |
 | cors | 2.8.x | Permisos para consumir la API |
 | nodemon | 3.x | Recarga automática |

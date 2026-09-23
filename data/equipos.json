@@ -1,0 +1,293 @@
+[
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d90"
+    },
+    "id": 1,
+    "abreviatura": "arg",
+    "pais": "Argentina",
+    "confederacion": "CONMEBOL"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d91"
+    },
+    "id": 2,
+    "abreviatura": "aus",
+    "pais": "Australia",
+    "confederacion": "AFC",
+    "updatedAt": {
+      "$date": "2026-09-23T18:58:22.968Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d92"
+    },
+    "id": 3,
+    "abreviatura": "bel",
+    "pais": "Belgium",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d93"
+    },
+    "id": 4,
+    "abreviatura": "bra",
+    "pais": "Brazil",
+    "confederacion": "CONMEBOL"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d94"
+    },
+    "id": 5,
+    "abreviatura": "col",
+    "pais": "Colombia",
+    "confederacion": "CONMEBOL"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d95"
+    },
+    "id": 6,
+    "abreviatura": "crc",
+    "pais": "Costa Rica",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d96"
+    },
+    "id": 7,
+    "abreviatura": "cro",
+    "pais": "Croatia",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d97"
+    },
+    "id": 8,
+    "abreviatura": "den",
+    "pais": "Denmark",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d98"
+    },
+    "id": 9,
+    "abreviatura": "egy",
+    "pais": "Egypt",
+    "confederacion": "CAF"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d99"
+    },
+    "id": 10,
+    "abreviatura": "eng",
+    "pais": "England",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d9a"
+    },
+    "id": 11,
+    "abreviatura": "fra",
+    "pais": "France",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d9b"
+    },
+    "id": 12,
+    "abreviatura": "ger",
+    "pais": "Germany",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d9c"
+    },
+    "id": 13,
+    "abreviatura": "isl",
+    "pais": "Iceland",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d9d"
+    },
+    "id": 14,
+    "abreviatura": "irn",
+    "pais": "IR Iran",
+    "confederacion": "AFC"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d9e"
+    },
+    "id": 15,
+    "abreviatura": "jpn",
+    "pais": "Japan",
+    "confederacion": "AFC"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941d9f"
+    },
+    "id": 16,
+    "abreviatura": "kor",
+    "pais": "Korea Republic",
+    "confederacion": "AFC"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941da0"
+    },
+    "id": 17,
+    "abreviatura": "mex",
+    "pais": "Mexico",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941da1"
+    },
+    "id": 18,
+    "abreviatura": "mar",
+    "pais": "Morocco",
+    "confederacion": "CAF"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941da2"
+    },
+    "id": 19,
+    "abreviatura": "nga",
+    "pais": "Nigeria",
+    "confederacion": "CAF"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941da3"
+    },
+    "id": 20,
+    "abreviatura": "pan",
+    "pais": "Panama",
+    "confederacion": "CONCACAF"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941da4"
+    },
+    "id": 21,
+    "abreviatura": "per",
+    "pais": "Peru",
+    "confederacion": "CONMEBOL"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941da5"
+    },
+    "id": 22,
+    "abreviatura": "pol",
+    "pais": "Poland",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941da6"
+    },
+    "id": 23,
+    "abreviatura": "por",
+    "pais": "Portugal",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941da7"
+    },
+    "id": 24,
+    "abreviatura": "rus",
+    "pais": "Russia",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941da8"
+    },
+    "id": 25,
+    "abreviatura": "ksa",
+    "pais": "Saudi Arabia",
+    "confederacion": "AFC"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941da9"
+    },
+    "id": 26,
+    "abreviatura": "sen",
+    "pais": "Senegal",
+    "confederacion": "CAF"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941daa"
+    },
+    "id": 27,
+    "abreviatura": "srb",
+    "pais": "Serbia",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941dab"
+    },
+    "id": 28,
+    "abreviatura": "esp",
+    "pais": "Spain",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941dac"
+    },
+    "id": 29,
+    "abreviatura": "sui",
+    "pais": "Sweden",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941dad"
+    },
+    "id": 30,
+    "abreviatura": "swe",
+    "pais": "Switzerland",
+    "confederacion": "UEFA"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941dae"
+    },
+    "id": 31,
+    "abreviatura": "tun",
+    "pais": "Tunisia",
+    "confederacion": "CAF"
+  },
+  {
+    "_id": {
+      "$oid": "6ab3f70d9d3fe1612d941daf"
+    },
+    "id": 32,
+    "abreviatura": "uru",
+    "pais": "Uruguay",
+    "confederacion": "CONMEBOL"
+  }
+]

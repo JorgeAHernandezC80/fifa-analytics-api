@@ -1,10 +1,11 @@
-require('dotenv').config();
+require('dotenv').config({ quiet: true });
 const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/database');
 const equipoRoutes = require('./routes/equipoRoutes');
 const jugadorRoutes = require('./routes/jugadorRoutes');
 const partidoRoutes = require('./routes/partidoRoutes');
+const { errorHandler, notFound } = require('./middlewares/errorHandler');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -13,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Ruta raíz (health check)
+// GET /
 app.get('/', (req, res) => {
   res.json({
     status: 'OK',
@@ -22,21 +23,18 @@ app.get('/', (req, res) => {
   });
 });
 
-// Rutas de la API
+// /api/equipos
 app.use('/api/equipos', equipoRoutes);
+// /api/jugadores
 app.use('/api/jugadores', jugadorRoutes);
+// /api/partidos
 app.use('/api/partidos', partidoRoutes);
 
-// Middleware de errores (debe ir al final, después de las rutas)
-app.use((err, req, res, next) => {
-  console.error(`[${new Date().toISOString()}] Error:`, err.message);
-  res.status(err.statusCode || 500).json({
-    status: 'error',
-    message: err.message || 'Error interno del servidor'
-  });
-});
+// Siempre al final: primero la ruta no encontrada, luego el manejador de errores
+app.use(notFound);
+app.use(errorHandler);
 
-// Arrancar servidor
+// Arrancar servidor (primero la conexión, después el puerto)
 const startServer = async () => {
   await connectDB();
   app.listen(PORT, () => {
@@ -50,11 +48,14 @@ const startServer = async () => {
     console.log(`   DELETE /api/equipos/:abbr`);
     console.log(`   GET    /api/jugadores`);
     console.log(`   GET    /api/jugadores/equipo/:equipo`);
+    console.log(`   GET    /api/jugadores/stats/:equipo`);
     console.log(`   GET    /api/jugadores/:id`);
     console.log(`   POST   /api/jugadores`);
     console.log(`   PATCH  /api/jugadores/:id`);
     console.log(`   DELETE /api/jugadores/:id`);
     console.log(`   GET    /api/partidos`);
+    console.log(`   GET    /api/partidos/equipo/:equipo`);
+    console.log(`   GET    /api/partidos/:id`);
     console.log(`   POST   /api/partidos`);
     console.log(`   PATCH  /api/partidos/:id`);
     console.log(`   DELETE /api/partidos/:id`);

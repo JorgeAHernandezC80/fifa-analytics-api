@@ -1,6 +1,6 @@
 const Partido = require('../models/Partido');
 
-// GET /api/partidos - Listar todos los partidos
+// GET /api/partidos
 exports.getAllPartidos = async (req, res, next) => {
   try {
     const partidos = await Partido.find().sort({ fecha: 1 });
@@ -14,7 +14,7 @@ exports.getAllPartidos = async (req, res, next) => {
   }
 };
 
-// GET /api/partidos/:id - Obtener un partido por _id
+// GET /api/partidos/:id
 exports.getPartidoById = async (req, res, next) => {
   try {
     const partido = await Partido.findById(req.params.id);
@@ -27,7 +27,7 @@ exports.getPartidoById = async (req, res, next) => {
   }
 };
 
-// GET /api/partidos/equipo/:equipo - Partidos de un equipo específico
+// GET /api/partidos/equipo/:equipo
 exports.getPartidosByEquipo = async (req, res, next) => {
   try {
     const partidos = await Partido.find({
@@ -43,7 +43,7 @@ exports.getPartidosByEquipo = async (req, res, next) => {
   }
 };
 
-// POST /api/partidos - Crear un partido
+// POST /api/partidos
 exports.createPartido = async (req, res, next) => {
   try {
     const nuevoPartido = await Partido.create(req.body);
@@ -53,7 +53,7 @@ exports.createPartido = async (req, res, next) => {
   }
 };
 
-// PATCH /api/partidos/:id - Actualizar un partido
+// PATCH /api/partidos/:id
 exports.updatePartido = async (req, res, next) => {
   try {
     const partido = await Partido.findByIdAndUpdate(req.params.id, req.body, {
@@ -69,7 +69,7 @@ exports.updatePartido = async (req, res, next) => {
   }
 };
 
-// DELETE /api/partidos/:id - Eliminar un partido
+// DELETE /api/partidos/:id
 exports.deletePartido = async (req, res, next) => {
   try {
     const partido = await Partido.findByIdAndDelete(req.params.id);
